@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFD6EF"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:background="#DFD6EF"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        //화면 타이틀
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인 화면"
+            android:gravity="center"
+            android:textSize="25sp" />
+
+        //아이디 입력 칸
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="textPersonName" />
+
+        //패스워드 입력칸
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="PASSWORD"
+            android:inputType="textPassword" />
+
+        //로그인 버튼
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="login"
+            android:text="Sign in"
+            android:textSize="18sp"
+            app:backgroundTint="#673AB7" />
+
+        <Button
+            android:id="@+id/findID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find ID"
+            android:textSize="18sp"
+            app:backgroundTint="#673AB7" />
+
+        <Button
+            android:id="@+id/findPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find PW"
+            android:textSize="18sp"
+            app:backgroundTint="#673AB7" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal" >
+
+        //회원가입 버튼
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="sign up"
+            android:textSize="18sp"
+            app:backgroundTint="#673AB7" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
